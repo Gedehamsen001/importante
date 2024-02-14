@@ -1,25 +1,11 @@
-$( document ).ready(function() {
-    
-    var envelope = $('#envelope');
-    var btn_open = $("#open");
-    
-    envelope.click( function() {
-        open();
-    });
-    btn_open.click( function() {
-        open();
-    });
-    btn_reset.click( function() {
-        close();
-    });
+const card = document.querySelector('.card');
+const openBtn = document.querySelector('.open-button');
+const closeBtn = document.querySelector('.close-button');
 
-    function open() {
-        envelope.addClass("open")
-           .removeClass("close");
-    }
-    function close() {
-        envelope.addClass("close")
-           .removeClass("open");
-    }
-   
+openBtn.addEventListener('click', () => {
+    card.classList.add('flipped');
+});
+
+closeBtn.addEventListener('click', () => {
+    card.classList.remove('flipped');
 });

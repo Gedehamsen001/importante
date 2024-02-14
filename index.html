@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="envlope-wrapper">
-    <div id="envelope" class="close">
-        <div class="front flap"></div>
-        <div class="front pocket"></div>
-        <div class="letter">
-            <div class="words line1">olá :)</div>
-            <div class="words line2">você é importante para mim.</div>
-            <div class="words line3"></div>
-            <div class="words line4"></div>
-        </div>
-        <div class="hearts">
-            <div class="heart a1"></div>
-            <div class="heart a2"></div>
-            <div class="heart a3"></div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="card-content">
+                    <h1 class="title">Vire a carta</h1>
+                    <h1 class="title"></h1>
+                    <h1 class="subtitle"></h1>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="card-content">
+                    <h1 class="title">Você</h1>
+                    <h1 class="title">É</h1>
+                    <h1 class="title">Importante</h1>
+                    <h1 class="title">Para mim.</h1>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="reset">
-    <button id="open">Abrir</button>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
-
+    <button id="open-btn" class="open-button">Virar Carta</button>
+    <script src="script.js"></script>
 </body>
 </html>
